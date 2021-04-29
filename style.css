@@ -1,24 +1,11 @@
-header {
-    color:blue;
-    text-align: center;
-    font-size: 50px;
+body {
+    background-color: oldlace;
 }
+
 h1 {
-    color:red;
-    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: red;
 }
-p {
-    text-align: center;
-}
-footer { 
-    position:fixed; bottom: 0; 
-    text-align: center;
-    color: tomato;
-    font-size: 17px;
-}
-input {
-    margin: auto;
-    display: block;
-    color: black;
-    margin-bottom: 15px;
+div {
+    color: midnightblue;
 }

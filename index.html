@@ -1,32 +1,31 @@
-<!DOCTYPE html> 
-<link rel="stylesheet" href="style.css">
-<script src="index.js"></script>
-<head>
-    <header loud>ARE YOU BORED?</header>
-    <input type="button" id="box" value="YES"/>
-    <div id="dialog-confirm"></div>
-    <input type="button" id="box" value="NO"/>
-    <div id="dialog-confirm"></div>
-</head>
-<body>
-    <h1>STEP RIGHT UP</h1>
-    <p>How many are bored??</p>
-    <input type="button" id="box" value="ONE"/>
-    <div id="dialog-confirm"></div>
-    <input type="button" id="box" value="TWO"/>
-    <div id="dialog-confirm"></div>
-    <input type="button" id="box" value="THREE"/>
-    <div id="dialog-confirm"></div>
-    <input type="button" id="box" value="FOUR"/>
-    <div id="dialog-confirm"></div>
-    <input type="button" id="box" value="FIVE"/>
-    <div id="dialog-confirm"></div>
+<!DOCTYPE html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Studio Ghibli Films</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="src/index.js"></script>
+  </head>
 
-</body>
+  <body>
+    <div class="nav">
+        <button id="all-movies">List All Films</button>
+        <button id="search-name">Search By Film</button>
+    </div>
 
+    <div id="search-div">
+      <form hidden id="search-form-name">
+        <input name="search-name" placeholder="Search Name">
+        <input type="submit" value="Search">
+      </form>
+    </div>
 
-
+    <div class="film-studio">
+      <h1>Studio Ghibli Films
+        <img src="https://upload.wikimedia.org/wikipedia/commons/9/92/Studio_Ghibli_wordmark.svg" alt="Studio Ghibli Logo" width="20%" height="20%">
+      </h1>
+    </div>
 
 
+  </body>
 
-<footer>BANISH THE BOREDOM</footer>
+</html> 
