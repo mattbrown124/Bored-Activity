@@ -19,15 +19,6 @@ const fetchAllMovies = async () => {
     })
 }
 
-const fetchAllMoviesAsync = async () => {
-  let response = await fetch(BASE_URL)
-  let movies = await response.json()
-  movies.forEach((movie) => {
-     console.log(movie)
-    renderMovieListItem(movie)
-  })
-}
-
 const getmovie = (e) => {
   console.log(e.target.parentElement.id)
   fetch(BASE_URL + "/" + e.target.parentElement.id)
@@ -89,28 +80,12 @@ const assignLikeButtons = () => {
       links.addEventListener("click", getMovie)
     })
   }
-  
-  const renderMovieListItem = (movie) => {
-    const { title, director, id } = movie
-    const movLi = document.createElement("li")
-    const movA = document.createElement("a")
-    const movBtn = document.createElement("button")
-    movLi.id = id
-  
-    movA.innerText = `${title} : ${director}`
-    movBtn.innerText = "Likes: 0"
-    movA.addEventListener("click", getMovie)
-    movBtn.addEventListener("click", handleLikes)
-  
-    movLi.append(movA, movBtn)
-    movList.append(movLi)
-  }
 
 const resetPage = () => {
   movList.innerHTML = ""
 }
 
 
-navAll.addEventListener("click", fetchAllMoviesAsync)
+movList.addEventListener("click", fetchAllMovies)
 navSearch.addEventListener("click", showSearchForm)
 searchForm.addEventListener("submit", handleSearch)
